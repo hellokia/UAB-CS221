@@ -1,0 +1,49 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply pink background and center content */
+body {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Create a flex container */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Create a grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Three columns */
+    grid-gap: 10px; /* Adjust the gutter as needed */
+}
+
+/* Style grid items */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    height: 100px;
+    background-color: white; /* Set your unique background color */
+    color: black; /* Set your font color */
+}
+
+/* Additional styling for grid item 1 */
+.grid-item:nth-child(1) {
+    grid-column: span 3; /* Span all three columns */
+    background-color: #ff66b2; /* Set a unique background color */
+    color: white; /* Set a contrasting font color */
+}
