@@ -1,0 +1,88 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, a, label, input, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define the color scheme */
+:root {
+    --primary-color: #f8a3cc; /* Light Pink */
+    --secondary-color: #f3db8b; /* Yellow */
+    --background-color: #f3ebe4; /* Light Grayish Blue */
+    --accent-color: #f2dfc8; /* Light Beige */
+    --footer-color: #f0eee1; /* Very Light Grayish Blue */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: #333;
+}
+
+/* Header and Navigation styles */
+header {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.navBar {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navBar:hover {
+    background-color: var(--accent-color);
+}
+
+/* Section styles */
+.section {
+    padding: 40px;
+}
+
+.content {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+/* Form styles */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+}
+
+.miniList{
+    margin-left: 40px;
+}
+
+.bottomFooter{
+    background-color: #f8a3cc;
+}
