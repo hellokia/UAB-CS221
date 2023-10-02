@@ -1,0 +1,85 @@
+@font-face {
+    font-family: pacifico;
+    src: url(Pacifico-Regular.ttf);
+}
+*{
+    font-family: pacifico;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    top:0;
+    position: sticky;
+    background-color: black;
+    color: white;
+    height: 75px;
+    padding-left: 25px;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+}
+
+.gridItem{
+    background-size:cover;
+    background-position: center;
+    border: 3px solid black;
+    border-radius: 15%;
+    gap: 10%;
+    height:300px;
+    width:300px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.gridItem:hover{
+    transform:scale (1.05);
+}
+
+.gridItem:nth-child(even){
+    border: 5px solid black;
+    border-style: groove;
+}
+
+/*  I excluded the even elements because above they have a border so I gave one to the odd elements*/
+.gridItem:not(.gridItem:nth-child(even)){
+    border: 5px solid purple;
+    border-style:double;
+}
+
+.gridItem::before{
+    content: "A photo";
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(255, 24, 151, 0.5), rgba(47, 179, 255, 0.5));
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+    ;
+}
+.gridItem:hover::before {
+    opacity: 1;
+}
+
+.gridItem::after {
+    content: "\f002";
+    font-family: pacifico;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gridItem:hover::after {
+    opacity: 1;
+}
