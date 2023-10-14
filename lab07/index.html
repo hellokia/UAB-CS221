@@ -10,6 +10,21 @@
     <body>
         <header>
             <nav class="nav">
+                <div class="mobileNav">
+                    <div class="mNavBox">
+                        <input class="checkbox" type="checkbox" id="checkbox">
+                        <div class="buttonBack"></div>
+                        <label class="menuButton" for="checkbox"> <div class="button"></div></label>
+                        <div class="menuDropList">
+                            <uo>
+                                <li class="mNavBar"><img src="star.png" class="bulletP"> <a href="#pLink" id="navBar" style="text-decoration: none; color:#fca8d0">Projects</a></li>
+                                <li class="mNavBar"><img src="star.png" class="bulletP"> <a href="#eLink" id="navBar" style="text-decoration: none; color: #fca8d0">Edu.& Exp.</a></li>
+                                <li class="mNavBar"><img src="star.png" class="bulletP"> <a href="#cLink" id="navBar" style="text-decoration: none; color: #fca8d0">Contact Me</a></li>
+                            </uo>
+                        </div>
+                        </div>
+                      </div>
+                </div>
                 <div class="navGrid">
                     <div class="navBar"> <a href="#pLink" id="navBar" style="text-decoration: none; color:#fca8d0">Projects</a></div>
                     <div class="navBar"> <a href="#eLink" id="navBar" style="text-decoration: none; color: #fca8d0;">Edu.& Exp.</a></div>
@@ -21,7 +36,12 @@
                         <h1 class="namef">Z a k i y y a h</h1>
                         <h1 class="namel">H a r r i s</h1> 
                         <div class="myPhoto">
-                        <img class="myPic" src="myphoto.png" alt="A picture of me">
+                            <picture class="myPic">
+                                <source media="(max-width:480px)" srcset="portfolioNavBackg.png=like portfolio">
+                                <source media="(max-widthz:768px)" srcset="portfolioNavBackg.png=like portfolio">
+                                <source media="(max-width:1024px)" srcset="portfolioNavBackg.png=like portfolio">
+                                <img class="myPic" src="myphoto.png" alt="A picture of me">
+                            </picture>
                         </div>
                 </div>
                 <div class="pinkLine"><hr></div>
@@ -46,7 +66,7 @@
                                 I am attending university, where I am pursing a BA in Computer Science.
                                 I am focusing on creating more personal projects to show later to count
                                 as my expereience as well. 
-                                As for jobs I have previously had,I have worked as:
+                                As for jobs, I have previously had, I have worked as a(n):
                                 <ul>
                                     <li class="innerList">Enviromental Non Profit Organization Secretary:</li>
                                         <p class="innerListExpl">
@@ -59,8 +79,7 @@
                                         <li>Python</li>
                                         <li>Java</li>
                                         <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>C Programming</li>
+                                        <li>CSS</li>                                    
                                     </ul>
                             </p>
                         </div>
