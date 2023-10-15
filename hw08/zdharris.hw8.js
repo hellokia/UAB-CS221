@@ -6,6 +6,7 @@ function grader(){
     let grade=prompt ("Please enter grade:");
     grade = parseFloat(grade);
     if ((grade<0 || grade>100) || isNaN(grade) || grade==null|| grade==" "){
+        grader();
         throw "Invaild Prompt.Try Prompt Again";
     }
 
