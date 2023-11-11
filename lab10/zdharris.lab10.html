@@ -1,19 +1,62 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 10</title>
     <script src="zdharris.lab10.js"></script>
-    <link rel="stylesheet" type="text/css" href="zdharris.lab10.css"/>
 
 </head>
-<body>
+<body style="background-color: black; color: green;text-align: center; border: 50px inset green;">
     <div>
-    <h1>Lab 10: Rock Paper Scissors</h1>
-    <button>Scissors</button>
-    <button>Rock</button>
-    <button>Paper</button>
+    <h1  style="margin-top: 5%; 
+    margin-bottom:5%; 
+    width: 100%;
+    text-align: center;">Lab 10: Rock Paper Scissors</h1>
+
+    <h2>A game, where you can choose one button below to compete againist the computer</h2>
+
+    <h1 id="result"style="margin-bottom:10%;
+    margin-top: 5%; "></h1>
+
+    <h1 id="userChoice"style="margin-bottom:10%;
+    margin-top: 5%; "></h1>
+
+    <h1 id="pcChoice"style="margin-bottom:10%;
+    margin-top: 5%; "></h1>
+
+    <button style="text-align: center;
+    background-color: rgb(3, 187, 3);
+    color: antiquewhite;
+    padding: 3% 0%;
+    width: 15%;
+    margin-bottom: 5%;
+    margin-right: 7%;
+    margin-left: 5%;
+    border-radius: 15px;"
+    onclick="scissorsRPSGame()">Scissors</button>
+
+    <button style="text-align: center;
+    background-color: green;
+    color: antiquewhite;
+    padding: 3% 0%;
+    width: 15%;
+    margin-bottom: 5%;
+    margin-right: 7%;
+    margin-left: 5%;
+    border-radius: 15px;"
+    onclick="rockRPSGame()">Rock</button>
+
+    <button style="text-align: center;
+    background-color: rgb(1, 65, 1);
+    color: antiquewhite;
+    padding: 3% 0%;
+    width: 15%;
+    margin-bottom: 5%;
+    margin-right: 7%;
+    margin-left: 5%;
+    border-radius: 15px;"
+    onclick="paperRPSGame()">Paper</button>
     </div>
 </body>
 </html>
